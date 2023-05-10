@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+td.contentbox {
+	background-color: #62c8ff;
+	height: 510px;	
+}
+
+td.content_text {
+	font-size: 20px;
+	font-family: malgun;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-align: right;
+}
+
+input.inputbox01 {
+	border: 1px solid #03b4b8;
+	background-color: #ffffff;
+	width: 250px;
+	font-family: Arial;
+	font-size: 20px;
+	color: #0089d2;
+	padding: 5px;
+}
