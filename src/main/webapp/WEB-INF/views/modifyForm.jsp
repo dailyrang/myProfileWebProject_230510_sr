@@ -6,6 +6,7 @@
 <meta charset="UTF-8">
 <link rel="stylesheet" href="/resources/css/title.css">
 <link rel="stylesheet" href="/resources/css/content.css">
+<script type="text/javascript" src="/resources/js/join.js"></script>
 <title>**MY PROFILE HOME**</title>
 </head>
 <body>
@@ -15,15 +16,15 @@
 	<table border="0" cellspacing="0" cellpadding="20" width="75%">
 		<tr>
 			<td class="titlebox">
-				<span class="title01">DEVELOPER SARANG'S PROFILE</span>
+				<span class="title01">DEVELOPER GYOJIN'S PROFILE</span>
 			</td>
 		</tr>
 		<tr>
 			<td class="titlebox">
-				<span class="title02">I'm SARANG, a developer who wants a development job. Please call me back.</span>
+				<span class="title02">I'm Gyojin Lee, a developer who wants a development job. Please call me back.</span>
 			</td>
 		</tr>
-<tr>
+		<tr>
 			<td>
 				<center>
 				<table border="0" cellspacing="0" cellpadding="10" width="80%">
@@ -31,10 +32,10 @@
 						<td class="contentbox">
 							<center>
 								<table border="0" cellspacing="0" cellpadding="10">
-									<form action="joinOk" method="post" name="join_frm">
+									<form action="modifyOk" method="post" name="join_frm">
 									<tr>
 										<td class="content_text">아 이 디 : </td>
-										<td><input class="inputbox01" type="text" name="mid"></td>
+										<td><input class="inputbox01" type="text" name="mid" value="${memberDto.mid }" readonly="readonly"></td>
 									</tr>
 									<tr>
 										<td class="content_text">비밀번호 : </td>
@@ -46,17 +47,21 @@
 									</tr>
 									<tr>
 										<td class="content_text">이&nbsp;&nbsp;&nbsp;&nbsp;름 : </td>
-										<td><input class="inputbox01" type="text" name="mname"></td>
+										<td><input class="inputbox01" type="text" name="mname" value="${memberDto.mname }"></td>
 									</tr>
 									<tr>
 										<td class="content_text">이 메 일 : </td>
-										<td><input class="inputbox01" type="text" name="memail"></td>
+										<td><input class="inputbox01" type="text" name="memail" value="${memberDto.memail }"></td>
+									</tr>									
+									<tr>
+										<td class="content_text">가 입 일 : </td>
+										<td><input class="inputbox01" type="text" name="mdate" value="${memberDto.mdate }" readonly="readonly"></td>
 									</tr>
 									
 									<tr>
 										<td colspan="2" align="center">
-											<input class="content_btn01" type="button" value="가입완료" onclick="joinCheck()">&nbsp;&nbsp;
-											<input class="content_btn01" type="button" value="로그인" onclick="script:window.location.href='login'">
+											<input class="content_btn01" type="button" value="수정완료" onclick="joinCheck()">&nbsp;&nbsp;
+											<input class="content_btn01" type="button" value="수정취소" onclick="script:window.location.href='index'">
 										</td>										
 									</tr>
 									</form>
