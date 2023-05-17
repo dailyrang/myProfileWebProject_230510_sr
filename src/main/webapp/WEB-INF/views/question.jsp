@@ -15,7 +15,7 @@
 	<table border="0" cellspacing="0" cellpadding="20" width="75%">
 		<tr>
 			<td class="titlebox">
-				<span class="title01">DEVELOPER SARANG'S PROFILE</span>
+				<span class="title01">DEVELOPER SARANG's PROFILE</span>
 			</td>
 		</tr>
 		<tr>
@@ -31,7 +31,7 @@
 						<td class="contentbox">
 							<center>
 								<table border="0" cellspacing="0" cellpadding="10">
-									<form action="joinOk" method="post">
+									<form action="questionOk" method="post">
 									<tr>
 										<td class="content_text">아 이 디 : </td>
 										<td><input class="inputbox01" type="text" name="bid" value="${memberDto.mid }" readonly="readonly"></td>
