@@ -26,12 +26,12 @@
 	<table border="0" cellspacing="0" cellpadding="20" width="75%">
 		<tr>
 			<td class="titlebox">
-				<span class="title01">DEVELOPER GYOJIN'S PROFILE</span>
+				<span class="title01">DEVELOPER SARANG's PROFILE</span>
 			</td>
 		</tr>
 		<tr>
 			<td class="titlebox">
-				<span class="title02">I'm Gyojin Lee, a developer who wants a development job. Please call me back.</span>
+				<span class="title02">I'm SaRang, a developer who wants a development job. Please call me back.</span>
 			</td>
 		</tr>
 		<tr>

@@ -23,7 +23,7 @@
 		</tr>
 		<tr>
 			<td class="titlebox">
-				<span class="title02">I'm SARANG'S, a developer who wants a development job. Please call me back.</span>
+				<span class="title02">I'm Sarang, a developer who wants a development job. Please call me back.</span>
 			</td>
 		</tr>
 		<tr>
@@ -65,15 +65,36 @@
 														<c:out value="${fn:substring(dto.bdate,0,10) }"></c:out>													
 													</td>
 												</tr>	
-												</c:forEach>												
+												</c:forEach>																								
 											</table>
 										</td>										
 									</tr>
 									<tr>
 										<td colspan="5" align="right">
 											<input class="content_btn01" type="button" value="글쓰기" onclick="script:window.location.href='question'">
+										</td>										
+									</tr>
+									<tr>
+										<td colspan="5" align="center">
+											<c:if test="${pageMaker.prev}">
+												<a href="list?pageNum=${pageMaker.startPage-5 }">◀</a>&nbsp;&nbsp;&nbsp;
+											</c:if>
+											<c:forEach begin="${pageMaker.startPage}" end="${pageMaker.endPage}" var="num">
+												<c:choose>
+													<c:when test="${currPage == num}">
+														<b><span style="color:#FFFFFF; background-color:#000000;">${num}</span></b>&nbsp;&nbsp;&nbsp;
+													</c:when>
+													<c:otherwise>
+													<a href="list?pageNum=${num }">${num }</a>&nbsp;&nbsp;&nbsp;
+													</c:otherwise>
+												</c:choose>
+												
+											</c:forEach>
+											<c:if test="${pageMaker.next}">
+												<a href="list?pageNum=${pageMaker.startPage+5 }">▶</a>
+											</c:if>
 										</td>
-									</tr>									
+									</tr>																		
 								</table>
 							</center>
 						</td>
